@@ -19,7 +19,7 @@ import com.amazonaws.services.kinesis.model.DescribeStreamRequest;
 import com.amazonaws.services.kinesis.model.DescribeStreamResult;
 
 /**
- * @author somanatn
+ * @author Somanath Nanda
  *
  */
 public class CreateKinesisStream {

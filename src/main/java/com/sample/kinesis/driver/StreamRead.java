@@ -3,6 +3,7 @@
  */
 package com.sample.kinesis.driver;
 
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -25,7 +26,7 @@ import com.amazonaws.services.kinesis.model.Record;
 import com.amazonaws.services.kinesis.model.Shard;
 
 /**
- * @author somanatn
+ * @author Somanath Nanda
  *
  */
 public class StreamRead {
@@ -103,7 +104,7 @@ public class StreamRead {
 			    			for (Record record : records) {
 			    				System.out.println("------------------------------------------------------------------");
 								System.out.println("    Partition Key   :  "+record.getPartitionKey());
-								System.out.println("    Data            :  "+record.getData().get());
+								System.out.println("    Data            :  "+new String(record.getData().array(),Charset.forName("UTF-8")));
 								System.out.println("    Sequence Number :  "+record.getSequenceNumber());
 								System.out.println("------------------------------------------------------------------");
 							}

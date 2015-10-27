@@ -20,7 +20,7 @@ import com.amazonaws.services.kinesis.model.DescribeStreamResult;
 import com.amazonaws.services.kinesis.model.Shard;
 
 /**
- * @author somanatn
+ * @author Somanath Nanda
  *
  */
 public class RetrieveShards {
