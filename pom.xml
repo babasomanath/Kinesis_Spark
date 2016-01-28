@@ -70,7 +70,7 @@
 		<dependency>
 			<groupId>com.amazonaws</groupId>
 			<artifactId>aws-java-sdk</artifactId>
-			<version>1.10.11</version>
+			<version>1.10.49</version>
 		</dependency>
 		<dependency>
 			<groupId>com.amazonaws</groupId>
@@ -102,6 +102,18 @@
 			<artifactId>amazon-kinesis-client</artifactId>
 			<version>${aws.kinesis.client.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>kinesis-storm-spout</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>amazon-kinesis-producer</artifactId>
+			<version>0.10.2</version>
+		</dependency>
+		<!-- <dependency> <groupId>com.amazonaws.services.kinesis</groupId> <artifactId>amazon-kinesis-data-visualization-sample</artifactId> 
+			<version>1.1.2</version> </dependency> -->
 	</dependencies>
 	<build>
 		<pluginManagement>

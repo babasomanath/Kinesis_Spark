@@ -79,6 +79,7 @@ public class RetrieveShards {
 			    		System.out.println("Shard ID : "+shard.getShardId());
 			    		System.out.println("  Starting Hash-Key : "+shard.getHashKeyRange().getStartingHashKey());
 			    		System.out.println("  Ending Hash-Key   : "+shard.getHashKeyRange().getEndingHashKey());
+			    		
 			    	}
 			    }
 			    if (describeStreamResult.getStreamDescription().getHasMoreShards() && shards.size() > 0) {

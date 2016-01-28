@@ -28,7 +28,7 @@ import com.amazonaws.services.kinesis.model.PutRecordsResult;
  */
 public class StreamWrite {
 
-	private static final String STREAM_NAME = "use_Case_Kinesis_Stream";
+	private static final String STREAM_NAME = "New_Stream_Test_Prodcuer";
 	static AmazonKinesisClient kinesisClient;
 	
 	private static void init(Regions regionForKinesisStream,String endpoint) throws Exception {
@@ -81,7 +81,7 @@ public class StreamWrite {
 			PutRecordsRequest putRecordsRequest  = new PutRecordsRequest();
 			putRecordsRequest.setStreamName(STREAM_NAME);
 			List <PutRecordsRequestEntry> putRecordsRequestEntryList  = new ArrayList<>(); 
-			for (int i = 0; i < 10; i++) {
+			for (int i = 0; i < 100; i++) {
 			    PutRecordsRequestEntry putRecordsRequestEntry  = new PutRecordsRequestEntry();
 			    putRecordsRequestEntry.setData(ByteBuffer.wrap(String.valueOf("baba- (.Y.)"+i).getBytes()));
 			    putRecordsRequestEntry.setPartitionKey(String.format("partitionKey-%d", i));

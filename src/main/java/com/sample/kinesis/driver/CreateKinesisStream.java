@@ -24,7 +24,7 @@ import com.amazonaws.services.kinesis.model.DescribeStreamResult;
  */
 public class CreateKinesisStream {
 
-	private static final String STREAM_NAME = "use_Case_Kinesis_Stream";
+	private static final String STREAM_NAME = "New_Stream_CWL";
 	private static final int SHARD_COUNT = 4;
 	static AmazonKinesisClient kinesisClient;
 	

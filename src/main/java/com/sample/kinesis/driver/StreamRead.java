@@ -31,7 +31,7 @@ import com.amazonaws.services.kinesis.model.Shard;
  */
 public class StreamRead {
 
-	private static final String STREAM_NAME = "use_Case_Kinesis_Stream";
+	private static final String STREAM_NAME = "New_Stream_Test_Prodcuer";
 	static AmazonKinesisClient kinesisClient;
 	
 	private static void init(Regions regionForKinesisStream,String endpoint) throws Exception {
